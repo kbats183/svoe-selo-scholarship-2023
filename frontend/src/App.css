@@ -1,0 +1,91 @@
+:root {
+    --primary-main: #42ab44;
+    --primary-light: #73D573;
+    --primary-dark: #42ab44;
+    --header-background: #ffffff;
+    --content-background: #f5f7f9;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.App {
+    flex: 1 0 auto;
+    background-color: var(--content-background);
+    padding-bottom: 40px;
+}
+
+.Footer {
+    flex: 0 0 auto;
+}
+
+.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionStatic {
+    background-color: var(--header-background);
+}
+
+.MuiAppBar-root .MuiToolbar-root .MuiButton-root, .MuiAppBar-root .MuiToolbar-root .MuiTypography-h5 {
+    color: var(--primary-main) !important;
+}
+
+.MuiAppBar-root .MuiToolbar-root .MuiTypography-h5 {
+    margin-left: 8px;
+}
+
+.MuiAppBar-root .MuiToolbar-root img {
+    height: 36px;
+}
+
+.page-header {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+    margin-bottom: 8px;
+}
+
+.scrolling-wrapper {
+    /*overflow-x: auto;*/
+    /*overflow-y: hidden;*/
+    white-space: nowrap;
+    margin: 8px 0;
+}
+
+.scrolling-wrapper > div {
+    margin: 8px 0;
+}
+
+.scrolling-wrapper > div {
+    white-space: nowrap;
+}
+
+.scrolling-wrapper .MuiPaper-root {
+    display: inline-block;
+    white-space: break-spaces;
+    height: 180px;
+    margin-right: 16px;
+}
+
+.story-content-image {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-content-image img {
+    max-width: 600px;
+    width: 100%;
+}
